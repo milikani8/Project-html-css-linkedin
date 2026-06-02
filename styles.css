@@ -120,19 +120,18 @@ body {
 }
 
 /* MAIN LAYOUT */
-
 .dashboard {
-  width: 100%;
-  max-width: 1920px;
-
-  margin: auto;
-  padding: 24px 135px;
+  width: min(100%, 1400px);
+  margin: 0 auto;
+  padding: 24px;
   display: grid;
-  grid-template-columns: 380px 1fr 420px;
-  gap: 38px;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr) minmax(
+      280px,
+      360px
+    );
+  gap: 24px;
   align-items: start;
 }
-
 /* COMMON CARD */
 
 .card {
@@ -298,19 +297,17 @@ body {
 }
 
 /* MIDDLE COLUMN */
-
 .middle-column {
-  height: 200vh;
-  overflow-y: auto;
-  padding-right: 10px;
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+  padding-right: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
   scrollbar-width: none;
-  min-height: 0;
   padding-top: 16px;
 }
-
 .middle-column::-webkit-scrollbar {
   display: none;
 }
