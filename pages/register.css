@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  background: black;
+}
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  background: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  margin-bottom: 20px;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LEFT SECTION */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-box {
+  width: 380px;
+  height: 44px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  gap: 12px;
+}
+
+.search-box i {
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+/* RIGHT SECTION */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 14px;
+  gap: 6px;
+  position: relative;
+}
+
+.nav-item i {
+  font-size: 22px;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+/* HAMBURGER */
+
+.menu-btn {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+.register-container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: flyIn 1s ease-out forwards;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateX(-800px) rotate(-10deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateX(40px) rotate(2deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 32px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #111827;
+  box-shadow: 0 0 8px rgba(109, 40, 217, 0.2);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #111827;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-text a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive */
+/* TABLET */
+
+@media (max-width: 1088px) {
+  .navbar {
+    padding: 15px 25px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .search-box {
+    width: 250px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-right {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px 0 10px;
+  }
+
+  .nav-item {
+    flex-direction: row;
+    gap: 14px;
+    font-size: 16px;
+  }
+
+  .nav-item i {
+    font-size: 20px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-left {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .search-box {
+    display: none;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+    font-size: 28px;
+  }
+
+  .nav-right {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Final Project LinkedIn</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LEFT -->
+      <div class="nav-left">
+        <div class="logo">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <!-- HAMBURGER -->
+      <label class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <a href="/index.html" class="nav-item">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+
+        <a href="/pages/about.html" class="nav-item">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>About Us</span>
+        </a>
+
+        <a href="/pages/jobs.html" class="nav-item">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Jobs</span>
+        </a>
+
+        <a href="/pages/login.html" class="nav-item">
+          <i class="fa-solid fa-user-lock"></i>
+          <span>Login</span>
+        </a>
+
+        <a href="/pages/register.html" class="nav-item">
+          <i class="fa-solid fa-address-card"></i>
+          <span>Register</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="dashboard">
+      <!-- LEFT COLUMN -->
+
+      <aside class="left-column">
+        <!-- PROFILE -->
+
+        <div class="card profile-card">
+          <img
+            class="cover-image"
+            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200"
+            alt="cover"
+          />
+
+          <div class="profile-content">
+            <img
+              class="profile-avatar"
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="profile"
+            />
+
+            <h2>Mythili</h2>
+
+            <p>website designer</p>
+
+            <div class="location">Hyderabad, Telangana</div>
+
+            <button class="experience-btn">
+              <i class="fa-solid fa-plus"></i>
+              Experience
+            </button>
+          </div>
+        </div>
+
+        <!-- PREMIUM -->
+
+        <div class="card premium-card">
+          <h4>Get 4x more profile views with Premium</h4>
+
+          <div class="premium-row">
+            <div class="gold-box"></div>
+            <span>Reactivate Premium: 50% Off</span>
+          </div>
+        </div>
+
+        <!-- ANALYTICS -->
+
+        <div class="card analytics-card">
+          <div class="analytics-row">
+            <span>Profile viewers</span>
+            <strong>53</strong>
+          </div>
+
+          <div class="analytics-row">
+            <span>Post impressions</span>
+            <strong>91</strong>
+          </div>
+        </div>
+
+        <!-- MENU -->
+
+        <div class="card menu-card">
+          <div class="menu-list">
+            <div class="menu-item">
+              <i class="fa-solid fa-bookmark"></i>
+              <span>Saved items</span>
+            </div>
+
+            <div class="menu-item">
+              <i class="fa-solid fa-users"></i>
+              <span>Groups</span>
+            </div>
+
+            <div class="menu-item">
+              <i class="fa-regular fa-newspaper"></i>
+              <span>Newsletters</span>
+            </div>
+
+            <div class="menu-item">
+              <i class="fa-regular fa-calendar"></i>
+              <span>Events</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!--MIDDLE COLUMN -->
+
+      <main class="middle-column">
+        <!-- CREATE POST -->
+
+        <div class="card create-post">
+          <div class="post-top">
+            <img
+              class="small-avatar"
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="profile"
+            />
+
+            <div class="post-input">Start a post</div>
+          </div>
+
+          <div class="post-actions">
+            <div class="post-action">
+              <i class="fa-solid fa-circle-play" style="color: #9ad46b"></i>
+              <span>Video</span>
+            </div>
+
+            <div class="post-action">
+              <i class="fa-solid fa-image" style="color: #9cc8f7"></i>
+              <span>Photo</span>
+            </div>
+
+            <div class="post-action">
+              <i class="fa-solid fa-newspaper" style="color: #efb8a8"></i>
+              <span>Write article</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SORT -->
+
+        <div class="feed-sort">
+          <div class="line"></div>
+
+          <div class="sort-text">Sort by: <strong>Top</strong></div>
+        </div>
+
+        <!-- FEED -->
+
+        <!-- REPEATABLE FEED CARDS -->
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            A toddler learning to climb a stool is a perfect picture of
+            resilience. They fall, try again and keep going.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200"
+          />
+        </div>
+
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            Success does not happen overnight. Keep building, keep learning and
+            keep improving every single day.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200"
+          />
+        </div>
+
+        <div class="card feed-card">
+          <div class="feed-header">
+            <div class="feed-user">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+              />
+
+              <div class="feed-user-info">
+                <h3>Private Company</h3>
+                <p>12h • Public</p>
+              </div>
+            </div>
+
+            <div class="follow-btn">+ Follow</div>
+          </div>
+
+          <div class="feed-text">
+            Great opportunities come from consistency and patience.
+          </div>
+
+          <img
+            class="feed-image"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200"
+          />
+        </div>
+      </main>
+
+      <!-- RIGHT COLUMN -->
+
+      <aside class="right-column">
+        <!-- NEWS -->
+
+        <div class="card news-card">
+          <div class="news-header">
+            <h2>LinkedIn News</h2>
+
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div class="top-stories">Top stories</div>
+
+          <div class="news-list">
+            <div class="news-item">
+              <h4>Top companies to work for in 5 Indian cities</h4>
+              <p>1h ago • 17,907 readers</p>
+            </div>
+
+            <div class="news-item">
+              <h4>Top finance experts to follow</h4>
+              <p>2d ago • 6,845 readers</p>
+            </div>
+
+            <div class="news-item">
+              <h4>Top tech & startup experts to follow</h4>
+              <p>2d ago • 5,378 readers</p>
+            </div>
+
+            <div class="news-item">
+              <h4>Top marketing experts to follow</h4>
+              <p>2d ago • 2,057 readers</p>
+            </div>
+
+            <div class="news-item">
+              <h4>Soft skills in an AI-first world of work</h4>
+              <p>1h ago • 1,835 readers</p>
+            </div>
+          </div>
+
+          <div class="show-more">
+            Show more news
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="card footer-card">
+          <div class="footer-links">
+            <a href="/pages/about.html">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+
+            <div class="dropdown-link">
+              <a href="#">Privacy & Terms</a>
+              <span class="arrow-down"></span>
+            </div>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+
+            <div class="dropdown-link">
+              <a href="#">Business Services</a>
+              <span class="arrow-down"></span>
+            </div>
+            <a href="#">Get the LinkedIn app</a>
+            <a href="#">More</a>
+          </div>
+
+          <div class="footer-copyright">
+            <span class="logo-text">Linked<span class="logo-in">in</span></span>
+            <span class="copyright-text">LinkedIn Corporation © 2026</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
