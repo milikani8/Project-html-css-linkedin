@@ -8,7 +8,6 @@
 body {
   background: #000;
   color: #e7e9ea;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -201,13 +200,15 @@ body {
 /* MAIN LAYOUT */
 
 .dashboard {
-  max-width: 1400px;
-  margin: auto;
+  width: min(100%, 1400px);
+  margin: 0 auto;
+  padding: 24px;
+  padding-top: 70px;
 
   display: grid;
-  grid-template-columns: 350px 1fr;
-  gap: 30px;
-  padding-top: 70px;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
 }
 
 /* COMMON CARD */
